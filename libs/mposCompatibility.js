@@ -112,8 +112,8 @@ module.exports = function(logger, poolConfig){
                 else if (result.affectedRows === 0){
                     connection.query('INSERT INTO `pool_worker` SET ?', {username: workerName, difficulty: diff});
                 }
-                else
-                    console.log('Updated difficulty successfully', result);
+                //else
+                //    console.log('Updated difficulty successfully', result);
             }
         );
     };
